@@ -1,0 +1,15 @@
+{% load static %}
+<div class="border-end border-warning h-100">
+    <div class="text-center">
+        <img class="img-fluid rounded mt-5" src="{% static 'core/images/Kawsar.jpg'%}" alt="Profile photo" width="100px" height="100px">
+    </div>
+    <h5 class="text-white mt-3 st-font text-center">Md.Kawser Ahmed</h5>
+    <hr class="border-light">
+    <nav class="nav flex-column text-center">
+        <a href="{% url 'home' %}" class="nav-link {{home}}">Home</a>
+        <a href="{% url 'services' %}" class="nav-link {{services}}" >Services</a>
+        <a href="{% url 'skills' %}" class="nav-link {{skill}}" >Skill</a>
+        <a href="{% url 'contact' %}" class="nav-link {{contact}}" >Contact</a>
+    </nav>
+
+</div>

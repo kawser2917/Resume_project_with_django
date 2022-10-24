@@ -1,0 +1,30 @@
+
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="mt-5">
+    <div class="text-center">
+        <img class="img-thumbnail" src="{% static 'core/images/Kawsar.jpg'%}" alt="Profile photo" width="180px" height="150px">
+    </div>
+    <div class="mt-5 text-white mx-5" style="text-align: justify; line-height:2rem;">
+        <h1 class="font-weight-bold st-font">Hello,</h1>
+        <div class="px-5">
+            <p style="text-indent: 100px;">I am <b class="text-warning">Md. Kawser Ahmed</b> a full stack developer specialised in frontend and backend development for complex scalable web apps.I offer the technical expertise you are seeking for a web developer positon.
+            </p>
+            <p>I have completed my bachelor's degree in <b class="text-warning">Computer Science Engineering</b> from Eastern University. I have served as an Intern at <b class="text-warning">Quantigo Ai</b> which was a Artificial Intelligence based firm.In this position i worked with python for retreiving data from csv file, json file and some automation. </p>
+            <p>
+                I am currently looking for full stack or front end engineering position in Dhaka city. I have experience in writing javascript, react and python, and have some understandin gof c, C++ and java.
+            </p>
+            <p>
+                I am very excited to make the leap and continue refining my skills with the right company.
+            </p>
+        </div>
+    </div>
+   <div class="text-center">
+    <a href="{% url 'contact' %}" class="btn btn-outline-warning me-3 ">Hire me</a>
+    <a href="{% url 'contact' %}" class="btn btn-outline-info">Contact</a>
+   </div>
+</div>
+
+{% endblock content%}
